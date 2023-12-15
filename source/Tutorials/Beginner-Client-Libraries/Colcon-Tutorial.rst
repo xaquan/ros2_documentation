@@ -124,11 +124,15 @@ At this point the workspace contains a single empty directory ``src``:
 Add some sources
 ^^^^^^^^^^^^^^^^
 
-Let's clone the `examples <https://github.com/ros2/examples>`__ repository into the ``src`` directory of the workspace:
+Let's clone the `examples <https://github.com/ros2/examples>` and `example_interfaces <https://github.com/ros2/example_interfaces>`__ repository into the ``src`` directory of the workspace:
 
 .. code-block:: bash
 
     git clone https://github.com/ros2/examples src/examples -b {REPOS_FILE_BRANCH}
+
+.. code-block:: bash
+
+    git clone https://github.com/ros2/example_interfaces.git src/examples_interfaces -b {REPOS_FILE_BRANCH}
 
 Now the workspace should have the source code to the ROS 2 examples:
 
@@ -141,6 +145,17 @@ Now the workspace should have the source code to the ROS 2 examples:
             ├── LICENSE
             ├── rclcpp
             ├── rclpy
+            └── README.md
+        └── examples_interface
+            └── action         
+            └── CMakeLists.txt  
+            └── CONTRIBUTING.md      
+            └── mapping_rules.yaml  
+            └── package.xml  srv
+            └── CHANGELOG.rst  
+            └── CODEOWNERS      
+            └── LICENSE          
+            └── msg                 
             └── README.md
 
     4 directories, 3 files
